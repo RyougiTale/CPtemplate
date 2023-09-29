@@ -11,7 +11,7 @@ struct E
     int to;
     int weight;
     int next;
-} Edge[SIZE];
+} Edge[SIZE << 1];
 int edge_cnt;
 int Head[SIZE] = {-1}; // 存的是边的指针, 前n个存的是一共n个点的起始
 
