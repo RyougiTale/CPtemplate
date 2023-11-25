@@ -72,11 +72,11 @@ void update(const int l, const int r, int value, int idx = 1)
 
     if (l <= mid)
     {
-        update(l, r, idx << 1);
+        update(l, r, value, idx << 1);
     }
     if (r > mid)
     {
-        update(l, r, idx << 1 | 1);
+        update(l, r, value, idx << 1 | 1);
     }
 
     tree[idx].val = tree[idx << 1].val + tree[idx << 1 | 1].val;
